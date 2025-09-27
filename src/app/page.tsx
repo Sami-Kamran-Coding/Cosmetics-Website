@@ -7,8 +7,8 @@ import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Star, Heart, Leaf, Award, Shield, Sparkles, Menu, X, ArrowUp, Instagram, Facebook, Twitter, Mail, Phone, MapPin } from 'lucide-react';
 
-const ClientVariable = process.env.CLIENT_VARIABLE;
-const HighLightClientVariable = process.env.HIGHLIGHT_CLIENT_VARIABLE;
+const ClientVariable = process.env.NEXT_PUBLIC_CLIENT_VARIABLE;
+const HighLightClientVariable = process.env.NEXT_PUBLIC_HIGHLIGHT_CLIENT_VARIABLE;
 
 import Image from 'next/image';
 
@@ -122,10 +122,10 @@ const HeroSection = () => {
       </div>
       
       <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
-        <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 fade-in-up animate">
+        <h1 className="text-5xl md:text-2xl font-serif font-bold mb-6 fade-in-up animate">
           Glow Naturally
         </h1>
-        <p className="text-xl md:text-2xl mb-8 font-light fade-in-up animate stagger-delay-1">
+        <p className="text-xl  md:text-lg mb-8 font-light fade-in-up animate stagger-delay-1">
           Discover premium cosmetics that enhance your natural beauty with 
           cruelty-free, organic ingredients trusted by professionals worldwide.
         </p>
