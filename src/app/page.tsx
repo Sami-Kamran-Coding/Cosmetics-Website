@@ -7,6 +7,8 @@ import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Star, Heart, Leaf, Award, Shield, Sparkles, Menu, X, ArrowUp, Instagram, Facebook, Twitter, Mail, Phone, MapPin } from 'lucide-react';
 
+const ClientVariable = process.env.CLIENT_VARIABLE;
+const HighLightClientVariable = process.env.HIGHLIGHT_CLIENT_VARIABLE;
 
 import Image from 'next/image';
 
@@ -55,7 +57,7 @@ useEffect(() => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-serif font-bold">
-            Luxe<span className="text-primary">Beauty</span>
+            {ClientVariable}<span className="text-primary">{HighLightClientVariable}</span>
           </div>
           
           {/* Desktop Navigation */}
@@ -284,7 +286,7 @@ const WhyChooseSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
-            Why Choose Luxe Beauty
+            Why Choose {ClientVariable} {HighLightClientVariable}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             We're committed to providing you with the highest quality beauty 
@@ -556,7 +558,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="text-3xl font-serif font-bold mb-6 text-white tracking-wide">
-              Luxe<span className="text-primary">Beauty</span>
+              {ClientVariable}<span className="text-primary">{HighLightClientVariable}</span>
             </div>
             <p className="text-gray-400 leading-relaxed mb-6">
               Premium cosmetics and skincare for the modern woman. 
@@ -617,7 +619,7 @@ const Footer = () => {
             <div className="space-y-4 text-gray-400">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary" />
-                <span>hello@luxebeauty.com</span>
+                <span>corelogex@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary" />
@@ -634,7 +636,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 pt-8 text-center text-sm text-gray-400">
           <p>
-            &copy; 2024 Luxe Beauty. All rights reserved. |{" "}
+            &copy; 2024 {ClientVariable} {HighLightClientVariable}. All rights reserved. |{" "}
             <a href="#" className="hover:text-primary transition">
               Privacy Policy
             </a>{" "}
