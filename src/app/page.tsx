@@ -122,10 +122,10 @@ const HeroSection = () => {
       </div>
       
       <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
-        <h1 className="text-5xl md:text-2xl font-serif font-bold mb-6 fade-in-up animate">
+        <h1 className="text-2xl md:text-7xl font-serif font-bold mb-6 fade-in-up animate">
           Glow Naturally
         </h1>
-        <p className="text-xl  md:text-lg mb-8 font-light fade-in-up animate stagger-delay-1">
+        <p className="text-lg  md:text-2xl mb-8 font-light fade-in-up animate stagger-delay-1">
           Discover premium cosmetics that enhance your natural beauty with 
           cruelty-free, organic ingredients trusted by professionals worldwide.
         </p>
